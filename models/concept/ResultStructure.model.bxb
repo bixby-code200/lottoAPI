@@ -1,0 +1,19 @@
+structure (ResultStructure) {
+  description (__DESCRIPTION__)
+  property (lottoResult) {
+    type (LottoResult)
+    min (Required) max (One)
+  }
+  property (bonusNumber) {
+    type (BonusNumber)
+    min (Required) max (One)
+  }
+  property (lottoTurn) {
+    type (LottoTurn)
+    min (Required) max (One)
+  }
+  property (lottoDate) {
+    type (LottoDate)
+    min (Required) max (One)
+  }
+}

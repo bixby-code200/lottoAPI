@@ -1,0 +1,17 @@
+capsule {
+  id (code200.lottoAPI)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+    target (bixby-mobile-ko-KR)
+  }
+  capsule-imports {
+    import (viv.time) {
+      as (time) version (2.85.1)
+    }
+  }
+  runtime-flags {
+    support-halt-effect-in-computed-inputs
+  }
+}

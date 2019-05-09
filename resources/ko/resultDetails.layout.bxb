@@ -1,0 +1,26 @@
+layout-macro-def(result_details) {
+  params {
+    param (results_for_view) { // view 안의 param 이름을 가져옴
+      type (ResultStructure)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    section {
+      title {
+        template ("#{value(results_for_view.lottoTurn)}회 로또 당첨 번호")
+      }
+      content {
+        single-line {
+          text {
+            value ("#{value(results_for_view.lottoResult)}")
+          }
+        }
+        paragraph {
+          value ("보너스 번호는 #{value(results_for_view.bonusNumber)}입니다.")
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+action (LottoResultGet) {
+  description (로또 번호를 알려준다.)
+  collect {
+    input (lottoTurn) {
+      type (LottoTurn)
+      min (Optional) max (One)
+    }
+  }
+  type (Search)
+  output (ResultStructure)
+}

@@ -1,0 +1,3 @@
+name (LottoResult) {
+  description (해당 회차 로또 당첨 번호)
+}

@@ -1,0 +1,5 @@
+train (t-00soejmve18xsrgi8j0v149z0) {
+  utterance ("[g:ResultStructure] (820)[v:LottoTurn]회 로또 당첨 번호 알려줘.")
+  plan (Y2BmUEjOT0k1MjDQy8kvKcl3DPDUC0otLs0pCS4pKk0uKS1KZZDHUOEDYkCUuaeWMEhhVxBSWpTHwMTACMQMQJKRAQSYIBgA)
+  last-modified (1557366082576)
+}

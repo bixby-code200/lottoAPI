@@ -1,0 +1,3 @@
+integer (LottoTurn) {
+  description (로또 회차)
+}

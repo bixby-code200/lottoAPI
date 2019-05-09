@@ -1,0 +1,51 @@
+result-view {
+  match: ResultStructure(result)
+  
+  message {
+    template ("결과 값을 확인하여 보세요")
+  }
+  
+  render {
+    // layout-macro (result_details) {
+    //   param (results_for_view) {
+    //     expression (result)
+    //   }
+    // }
+    layout {
+      section {
+        content {
+          title-card {
+            title-area {
+              slot1 {
+                text {
+                  value ("#{value(result.lottoDate)} #{value(result.lottoTurn)}회 로또 당첨 번호")
+                  style (Title_M)
+                }
+              }
+              slot2 {
+                single-line {
+                  text {
+                    value ("#{value(result.lottoResult)}")
+                    style (Title_S)
+                  }
+                }
+              }
+              slot3 {
+                single-line {
+                  text {
+                    value ("보너스 번호 #{value(result.bonusNumber)}")
+                  }
+                }
+              }
+            }
+            on-click {
+              intent {
+                goal: ResultStructure
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
